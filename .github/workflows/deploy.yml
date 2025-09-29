@@ -1,0 +1,57 @@
+name: Deploy to Heroku
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    ##############################
+    # Pessoa Service Deploy
+    ##############################
+
+    - name: Build Docker image for pessoa-service
+      run: docker build -t pessoa-service ./pessoa
+
+    - name: Heroku login (Pessoa)
+      run: echo $HEROKU_API_KEY | docker login --username=_ --password-stdin registry.heroku.com
+
+    - name: Push Docker image to Heroku Container Registry (Pessoa)
+      run: docker tag pessoa-service registry.heroku.com/pessoa-service-app/web &&
+           docker push registry.heroku.com/pessoa-service-app/web
+
+    - name: Install Heroku CLI (Pessoa)
+      run: curl https://cli-assets.heroku.com/install.sh | sh
+
+    - name: Release Docker image on Heroku (Pessoa)
+      run: heroku container:release web --app pessoa-service-app
+
+
+    ##############################
+    # Curso Service Deploy
+    ##############################
+
+    - name: Build Docker image for curso-service
+      run: docker build -t curso-service ./curso
+
+    - name: Heroku login (Curso)
+      run: echo $HEROKU_API_KEY | docker login --username=_ --password-stdin registry.heroku.com
+
+    - name: Push Docker image to Heroku Container Registry (Curso)
+      run: docker tag curso-service registry.heroku.com/curso-service-app/web &&
+           docker push registry.heroku.com/curso-service-app/web
+
+    - name: Install Heroku CLI (Curso)
+      run: curl https://cli-assets.heroku.com/install.sh | sh
+
+    - name: Release Docker image on Heroku (Curso)
+      run: heroku container:release web --app curso-service-app

@@ -1,0 +1,69 @@
+
+### INCLUSÃO DE CURSO
+POST http://localhost:8083/cursos HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Ethereum Developer Pack",
+    "descricao": "Educamos de manera presencial y gratuita, con instructores de primer nivel en toda Latinoamérica junto a aliados claves como universidades y comunidades locales. El Ethereum Developer Pack es un grupo de cursos para aprender a desarrollar en el ecosistema de Ethereum. Son cinco módulos donde enseñamos desde lo más básico de blockchain hasta seguridad de Smart Contracts."
+}
+
+### INCLUSÃO DE ALUNOCURSO
+POST http://localhost:8083/alunocursos HTTP/1.1
+Content-Type: application/json
+
+{
+  "aluno_id":"f767cd63-1630-4422-9f90-83817da89aa6",
+  "curso_id":"0d15de9b-75ce-4b63-b1af-18d89209f34c"
+}
+
+### GET ALUNOS
+GET http://localhost:8083/alunos HTTP/1.1
+Content-Type: application/json
+
+
+
+### INCLUSÃO DE ALUNO
+POST http://localhost:8083/alunos HTTP/1.1
+Content-Type: application/json
+
+{
+    "pessoa_id": "0a0b6f52-12fe-4c6a-9b1c-6cfbfe59b8ca",
+    "nome": "Juan Pérez",
+    "wallet": "0x2ee5e013268D4Fc0DDAD4b4FbbF1f1250b80GUBA"
+}
+
+### EDICAO DE ALUNO
+PUT http://localhost:8083/alunos/8233578c-35ac-40b5-9bd6-f34ed8bbb49e HTTP/1.1
+Content-Type: application/json
+
+{
+    "pessoa_id": "0a0b6f52-12fe-4c6a-9b1c-6cfbfe59b8ca",
+    "data_inicio": "2025-06-08T00:00:05Z",
+    "xp_total": 0, 
+    "nft_id": "0xNft",
+    "status_aluno": "ATIVO", 
+    "nome": "Juan Pérez",
+    "wallet": "0xCDdA743f59D355c335328703BF248c302d02C2FC"
+}
+
+
+### DELETE ALUNOS
+DELETE http://localhost:8083/alunos/c5e91618-78d7-4da3-a4b3-b4bfc356cc86 HTTP/1.1
+Content-Type: application/json
+
+
+### GET ALUNO BY WALLET
+GET http://localhost:8083/alunos/by-wallet/0x2ee5e013268D4Fc0DDAD4b4FbbF1f1250b80GUBA HTTP/1.1
+Content-Type: application/json
+
+
+### GET MATRICULAS
+GET http://localhost:8083/alunocursos HTTP/1.1
+Content-Type: application/json
+
+
+### DELETE MATRICULA
+DELETE http://localhost:8083/alunocursos/0408251f-fc7e-4c92-bbdd-8253c170560b HTTP/1.1
+Content-Type: application/json
+
