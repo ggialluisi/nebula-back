@@ -3,14 +3,14 @@ package web
 import (
 	"net/http"
 
-	_ "github.com/77InnovationLabs/nebula-back/curso/docs"
+	_ "github.com/ggialluisi/nebula-back/curso/docs"
 	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/cors"
 	"github.com/go-chi/jwtauth"
 	httpSwagger "github.com/swaggo/http-swagger"
 
-	"github.com/77InnovationLabs/nebula-back/curso/internal/infra/api"
+	"github.com/ggialluisi/nebula-back/curso/internal/infra/api"
 )
 
 // SetupRoutes configura todas as rotas da aplicação.

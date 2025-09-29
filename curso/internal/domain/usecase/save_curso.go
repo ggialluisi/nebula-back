@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/77InnovationLabs/nebula-back/curso/internal/domain/dto"
-	"github.com/77InnovationLabs/nebula-back/curso/internal/domain/entity"
-	"github.com/77InnovationLabs/nebula-back/curso/internal/domain/repository"
-	"github.com/77InnovationLabs/nebula-back/curso/pkg/event_dispatcher"
+	"github.com/ggialluisi/nebula-back/curso/internal/domain/dto"
+	"github.com/ggialluisi/nebula-back/curso/internal/domain/entity"
+	"github.com/ggialluisi/nebula-back/curso/internal/domain/repository"
+	"github.com/ggialluisi/nebula-back/curso/pkg/event_dispatcher"
 	"github.com/google/uuid"
 )
 

@@ -1,8 +1,8 @@
 package gorm
 
 import (
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/entity"
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/repository"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/entity"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/repository"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
 )

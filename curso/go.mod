@@ -1,4 +1,4 @@
-module github.com/77InnovationLabs/nebula-back/curso
+module github.com/ggialluisi/nebula-back/curso
 
 go 1.23.0
 

@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/dto"
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/infra/messaging"
-	event_pkg "github.com/77InnovationLabs/nebula-back/pessoa/pkg/event_dispatcher"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/dto"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/infra/messaging"
+	event_pkg "github.com/ggialluisi/nebula-back/pessoa/pkg/event_dispatcher"
 )
 
 type PessoaChangedKafkaHandler struct {

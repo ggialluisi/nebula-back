@@ -3,10 +3,10 @@ package usecase
 import (
 	"encoding/json"
 
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/dto"
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/entity"
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/repository"
-	"github.com/77InnovationLabs/nebula-back/pessoa/pkg/event_dispatcher"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/dto"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/entity"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/repository"
+	"github.com/ggialluisi/nebula-back/pessoa/pkg/event_dispatcher"
 	"github.com/google/uuid"
 )
 

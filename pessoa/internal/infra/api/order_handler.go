@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/repository"
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/usecase"
-	"github.com/77InnovationLabs/nebula-back/pessoa/pkg/event_dispatcher"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/repository"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/usecase"
+	"github.com/ggialluisi/nebula-back/pessoa/pkg/event_dispatcher"
 )
 
 type WebOrderHandler struct {

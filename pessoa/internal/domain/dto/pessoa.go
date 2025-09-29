@@ -1,7 +1,7 @@
 package dto
 
 import (
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/entity"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/entity"
 	"github.com/google/uuid"
 )
 

@@ -1,4 +1,4 @@
-module github.com/77InnovationLabs/nebula-back/pessoa
+module github.com/ggialluisi/nebula-back/pessoa
 
 go 1.23.0
 

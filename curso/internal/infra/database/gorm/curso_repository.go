@@ -3,8 +3,8 @@ package gorm
 import (
 	"errors"
 
-	"github.com/77InnovationLabs/nebula-back/curso/internal/domain/entity"
-	"github.com/77InnovationLabs/nebula-back/curso/internal/domain/repository"
+	"github.com/ggialluisi/nebula-back/curso/internal/domain/entity"
+	"github.com/ggialluisi/nebula-back/curso/internal/domain/repository"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
 )

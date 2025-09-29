@@ -3,7 +3,7 @@ package gorm
 import (
 	"testing"
 
-	"github.com/77InnovationLabs/nebula-back/curso/internal/domain/entity"
+	"github.com/ggialluisi/nebula-back/curso/internal/domain/entity"
 
 	"github.com/stretchr/testify/assert"
 	"gorm.io/driver/sqlite"

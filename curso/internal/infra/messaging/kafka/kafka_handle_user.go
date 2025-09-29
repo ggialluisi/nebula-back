@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/77InnovationLabs/nebula-back/curso/internal/domain/dto"
-	"github.com/77InnovationLabs/nebula-back/curso/internal/domain/repository"
-	"github.com/77InnovationLabs/nebula-back/curso/internal/domain/usecase"
 	"github.com/IBM/sarama"
+	"github.com/ggialluisi/nebula-back/curso/internal/domain/dto"
+	"github.com/ggialluisi/nebula-back/curso/internal/domain/repository"
+	"github.com/ggialluisi/nebula-back/curso/internal/domain/usecase"
 )
 
 type PessoaKafkaHandlers struct {

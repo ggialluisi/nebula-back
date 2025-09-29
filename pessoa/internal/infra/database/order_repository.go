@@ -3,7 +3,7 @@ package database
 import (
 	"database/sql"
 
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/entity"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/entity"
 )
 
 type OrderRepository struct {

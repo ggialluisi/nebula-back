@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/77InnovationLabs/nebula-back/pessoa/internal/domain/entity"
+	"github.com/ggialluisi/nebula-back/pessoa/internal/domain/entity"
 	"github.com/google/uuid"
 
 	"github.com/stretchr/testify/assert"
